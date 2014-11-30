@@ -19,5 +19,6 @@ tar.close()
 
 git_add = ('git add *')
 git_commit = ('git commit -m %s') % time.strftime('%Y%m%d')
-
-os.system()
+print git_commit
+os.system( git_add )
+os.system( git_commit )
