@@ -19,6 +19,14 @@ tar.close()
 
 git_add = ('git add *')
 git_commit = ('git commit -m %s') % time.strftime('%Y%m%d')
-print git_commit
-os.system( git_add )
-os.system( git_commit )
+git_push = ('git push')
+git_commit = ('git commit -m %s') % time.strftime('%Y%m%d')
+
+if os.system( git_add ) != 0:
+	print 'git add was wrong'
+
+if os.system( git_commit ) != 0:
+	print 'git commit was wrong'
+
+if os.system( git_push ) != 0:
+	print 'git push was wrong'
