@@ -23,7 +23,9 @@ tar.close()
 
 ### git part ###
 repo = git.Repo('.')
+commit_name = time.strftime('%Y%m%d')
+
 print repo.git.add('*')
-print repo.git.commit(m='%s') % time.strftime('%Y%m%d')
-print repo.git.push()
+print repo.git.commit( m = commit_name )
+#print repo.git.push()
 ### git part ###
