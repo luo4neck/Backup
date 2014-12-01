@@ -28,5 +28,5 @@ commit_name = time.strftime('%Y%m%d')
 print repo.git.add('*')
 print repo.git.commit( m = commit_name )
 print repo.git.status()
-# print repo.git.push()
+print repo.git.push()
 ### git part ###
