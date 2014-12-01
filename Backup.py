@@ -21,24 +21,9 @@ tar.close()
 ### backup for blog ####
 
 
-
-git_add = ('git add *')
-git_commit = ('git commit -m %s') % time.strftime('%Y%m%d')
-git_push = ('git push')
-
+### git part ###
 repo = git.Repo('.')
 print repo.git.add('*')
-print repo.git.commit(m='test')
+print repo.git.commit(m='%s') % time.strftime('%Y%m%d')
 print repo.git.push()
-# print repo.git.commit(m='%s') % time.strftime('%Y%m%d')
-
-# git_commit = ('git commit -m %s') % time.strftime('%Y%m%d')
-
-# if os.system( git_add ) != 0:
-#print 'git add was wrong'
-
-# if os.system( git_commit ) != 0:
-# print 'git commit was wrong'
-
-# if os.system( git_push ) != 0:
-# print 'git push was wrong'
+### git part ###
