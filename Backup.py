@@ -6,7 +6,7 @@ import tarfile
 import time
 
 ### backup for blog ####
-target_name = './Blog' + os.sep + 'blog_backup.tar.gz'
+target_name = './blog' + os.sep + 'blog_backup.tar.gz'
 tar = tarfile.open(target_name, 'w:gz')
 for root,dirs,files in os.walk('/home/neck/Blog/source/img'):
 	for names in files:
@@ -29,6 +29,7 @@ git_push = ('git push')
 repo = git.Repo('.')
 print repo.git.add('*')
 print repo.git.commit(m='test')
+print repo.git.push()
 # print repo.git.commit(m='%s') % time.strftime('%Y%m%d')
 
 # git_commit = ('git commit -m %s') % time.strftime('%Y%m%d')
