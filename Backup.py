@@ -12,6 +12,7 @@ for root,dirs,files in os.walk('/home/neck/Blog/source/img'):
 	for names in files:
 		fullpath = os.path.join(root,names)
 		tar.add(fullpath,arcname=names)
+
 for root,dirs,files in os.walk('/home/neck/Blog/source/_posts'):
 	for names in files:
 		fullpath = os.path.join(root,names)
