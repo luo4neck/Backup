@@ -1,0 +1,7 @@
+This is a simple Python tool which pack up all graphs and articles of personal blog into a tar file and upload to github, related library: git, tarfile, time. 
+
+Address of the blog: http://luo4neck.github.io/
+
+This tool was written with Python 2.7, but will be rewritten in Python 3 soon. 
+
+2016-10-23, Dublin
